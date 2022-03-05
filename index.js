@@ -39,7 +39,7 @@ init();
 app.get('/api/stats', (_req, res) => {
     if (!ready) return res.status(503).send('Not ready');
 
-    res.send(200).json({
+    res.status(200).json({
         servers: stats.servers,
         monthlyVotes: stats.monthlyVotes,
         totalVotes: stats.totalVotes,
