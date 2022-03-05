@@ -38,7 +38,7 @@ init();
 
 app.get('/api/stats', (_req, res) => {
     if (!ready) return res.status(503).send('Not ready');
-    
+
     res.send(200).json({
         servers: stats.servers,
         monthlyVotes: stats.monthlyVotes,
@@ -46,3 +46,5 @@ app.get('/api/stats', (_req, res) => {
         shards: stats.shards,
     })
 });
+
+app.listen(process.env.PORT || 8080);
