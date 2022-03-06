@@ -1,4 +1,4 @@
 - A simple API that uses topgg API to cache and server bot stats
 - The bot ID goes in the config.json file
 - The .env file must conatin your TopGG TOKEN and the PORT you want the app to run on
-- Stats can be retieved by making a GET request to `/api/stats`
+- Stats can be retieved by making a GET request to `/stats`
