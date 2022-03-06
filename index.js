@@ -36,7 +36,7 @@ const init = () => {
 
 init();
 
-app.get('/', (_req, res) => {
+app.get('/stats', (_req, res) => {
     if (!ready) return res.status(503).send('Not ready');
 
     res.status(200).json({
